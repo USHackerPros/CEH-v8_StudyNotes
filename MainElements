@@ -1,0 +1,264 @@
+Author: Cody Mercer
+Date: December 31, 2014
+
+******************************************************************
+*************Certified Ethical Hacker Study Notes v8**************
+******************************************************************
+
+==================================
+Wardriving(Wireless Cracking Tools)
+==================================
+AirSnort
+AirSnare
+Kismet
+NetStumbler
+inSSIDer
+
+=========
+DoS Tools
+=========
+DoSHTTP
+UDP Flood
+Jolt2
+Targa
+
+==========
+DDoS Tools
+==========
+Trinoo
+LOIC
+TFN2K
+Stacheldraht
+
+=============
+NMAP Commands
+=============
+-sV - Version Detection
+-sC - Enable Scripting Engine
+-sP -PE -PA <port> <Start IP - End IP> ICMP Ping Scan
+-O - Operating System
+--traceroute
+-P0 - Disable ICMP Pings
+-sS - Perform Stealth Scanning
+-n - Disable DNS Resolution
+-R - Always Perform DNS Resolution
+--script - Enable Scripting Engine
+-sX - Christmas scan used mainly in an Linux environment
+-sF - FYN scan
+-sN - NULL
+-sP -N - ACK scan
+
+=======================
+Password Cracking Tools
+=======================
+Cain & Able
+John the Ripper
+KerbCrack
+L0phtCrack
+THC-Hydra
+
+=====================
+Network Mapping Tools
+======================
+HP OpenView
+Lumeta IPsonar
+NetCrunch
+Nmap
+PacketTrap
+Scrutinizer
+SolarWinds
+Spiceworks
+WhatsUp Gold
+Docusnap
+
+
+----------------------------
+----->Scanning Network<-----
+----------------------------
+//TCP Flags
+1. SYN
+2. ACK
+3. URG
+4. FIN
+5. PSH
+6. RST
+
+//Scanning Techniques
+1. TCP Connect/Full OPen Scan
+2. Stealth 
+3. IDLE
+4. ICMP Echo/List Scan
+5. SYN/FIN Using IP Fragmentation
+6. UDP
+7. Inverse TCP Flags
+8. ACK Flag
+
+--------------------------
+----->System Hacking<-----
+--------------------------
+*Footprinting 
+*Scanning Module
+*Enumeration Module - SNMP, DNS
+
+//Web Server Intel Gathering
+1. Netcraft
+2. EDGAR
+3. Wayback Machine
+
+//Hacking Goals
+1. Gaining Access
+2. Escalation
+3. Executing Applications
+4. Hiding Files
+5. Covering Tracks
+
+//Password Cracking
+1. Dictionary 
+2. Brute Force
+3. Hybrid
+4. Syllable
+5. Rule-Based
+
+//Types of PWord Attacks
+1. Passive Online
+2. Active Online
+3. Offline
+4. Non-Electronic Attacks
+
+-----------------------
+----->Enumeration<-----
+-----------------------
+*Netbios/nbtstat
+
+//SMTP validation
+1. VRFY
+2. EXPN
+3. RCPT TO
+4. SMTP
+
+//Footprinting
+1. IP Addresses
+2. Namespaces
+3. Employee Information
+4. Phone Numbers
+5. Facility Information
+6. Job Information
+
+//Scanning
+1. Ping
+2. Ping Sweeps
+3. Ports Scans
+4. Tracert
+
+//Enumeration
+1. Network Resources
+2. Users/Groups
+3. Routing Tables
+4. Auditing & Service Settings
+5. Machine Names
+6. Applications/Banners
+7. SNMP/DNS processes
+
+//Ports of Interest
+53
+139
+135
+137
+443
+445
+161/162
+389
+3268
+25
+
+//Null Sessions
+1. List of Users/Groups
+2. Machine Names
+3. List of Shares
+4. Users/Groups SIDS
+
+--------------------
+----->Sniffing<-----
+--------------------
+Sniffing occurs at Layer 2 of OSI Model
+Active - Switch-Based
+Passive - Hub-Based
+
+//Countermeasures
+1. Static IP-Addresses
+2. ARP Static Addresses
+3. Encrypted Sessions (SSH vs. Telnet)
+4. SCP vs. FTP
+5. SSL
+
+//Type of Attack
+1. ARP Poisoning
+2. MAC Attack
+3. DHCP Attack
+4. Spoofing
+5. DNS Poisoning
+
+//Sniffing Information Obtained
+1. Syslog Traffic
+2. Telnet Password
+3. Router Configurations
+4. FTP Passwords
+5. DNS Traffic
+6. Email Traffic
+7. Web Traffic
+8. Chat Sessions
+
+//Steps Involved
+1. MAC Flood (Yersinia, MACof)
+2. DHCP Starvation (DHCPstarv, Gobbler)
+3. Perform Rogue Server Attack
+4. Perform ARP Poisoning Attack (Cain & Able, WinARPAttacker, Ufasoft snif)
+5. Perform MAC Spoofing (sMAC)
+6. Perform IRDP Spoofing
+7. Perform DNS Spoofing (ARPspoof, DNSspoof)
+8. Perform Cache Poisoning
+9. Perform Proxy Server DNS Poisoning
+
+-----------------------------
+----->Denial of Service<-----
+-----------------------------
+//DoS Preventative Measures
+1. Disable un-necessary services
+2. Anti-Malware
+3. Router Throttling
+4. Reverse Proxy
+5. Ingress Egress Filtering
+6. Degrading Services
+7. Absorbing the attack
+
+//Bot-Net Preventative Measures
+1. RFC 3704 Filtering
+2. Black Hole Filtering
+3. Source IP Reputation Filtering
+
+//Types of Attacks
+1. Service Request
+2. SYN Attack/Flood
+3. ICMP Flood
+4. Ping of Death
+5. Teardrop
+6. Smurf
+7. Fraggle
+8. Land
+9. Permanent 
+10. Application-level Attack
+
+//Dangerous Functions
+gets()
+strcpy()
+scanf()
+strcat()
+
+//ICMP Attacks
+1. Ping of Death - Fragmented attacks that cause a buffer over-flow
+2. SYN Flood - Large amount of TCP SYN segments sent
+3. SMURF - Spoofed IP address flood with Echo Reply 
+4. ICMP Flood - Large amount of ICMP packets sent a target to saturate host
+
+
+NOP = 0x99
